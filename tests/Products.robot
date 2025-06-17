@@ -8,7 +8,7 @@ Test Teardown     Take Screenshot
 
 
 *** Test Cases ***
-Deve listar produtos cadastrados a partir da aba "Home"
+Listar produtos via aba "Home"
     [Tags]    listar
 
     Generate Random User Data
@@ -19,7 +19,7 @@ Deve listar produtos cadastrados a partir da aba "Home"
     Check If In Page                Lista dos Produtos
 
 
-Deve listar produtos cadastrados a partir do menu de navegação
+Listar produtos via menu de navegação
     [Tags]    listar
 
     New User and Login
@@ -28,7 +28,7 @@ Deve listar produtos cadastrados a partir do menu de navegação
     Check If In Page                Lista dos Produtos
 
 
-Deve acessar página de cadastro a partir da aba "Home"
+Acessar página de cadastro via aba "Home"
     [Tags]    ir_cadastro
 
     New User and Login
@@ -37,7 +37,7 @@ Deve acessar página de cadastro a partir da aba "Home"
     Check If In Page                Cadastro de Produtos
 
 
-Deve acessar página de cadastro a partir do menu de navegação
+Acessar página de cadastro via menu de navegação
     [Tags]    ir_cadastro
 
     New User and Login
@@ -46,7 +46,7 @@ Deve acessar página de cadastro a partir do menu de navegação
     Check If In Page                Cadastro de Produtos
 
 
-Deve cadastrar produto com sucesso
+Cadastrar novo produto com dados válidos
     [Tags]    sucesso_cadastro
 
     New User and Login
@@ -60,7 +60,7 @@ Deve cadastrar produto com sucesso
     Product Should Be Registered    ${product_data}[nome]
 
 
-Não deve cadastrar produto com nome duplicado
+Impedir cadastro de produto com nome duplicado
     [Tags]    dup_cadastro
 
     New User and Login
