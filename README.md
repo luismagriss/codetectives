@@ -2,7 +2,7 @@
   <tr>
     <!-- Imagem da squad -->
     <td width="50%" align="center" valign="middle" style="height: 220px;">
-      <img src="../img/Squad_Codetectives.png" alt="Squad Codetectives" style="width: 100%; height: 100%; object-fit: cover;" />
+      <img src="/img/Squad_Codetectives.png" alt="Squad Codetectives" style="width: 100%; height: 100%; object-fit: cover;" />
     </td>
     <!-- Texto do projeto -->
     <td width="75%" align="center" valign="middle">
