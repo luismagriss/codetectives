@@ -1,3 +1,24 @@
+<table width="100%" style="table-layout: fixed;">
+  <tr>
+    <!-- Imagem da squad -->
+    <td width="50%" align="center" valign="middle" style="height: 220px;">
+      <img src="../img/Squad_Codetectives.png" alt="Squad Codetectives" style="width: 100%; height: 100%; object-fit: cover;" />
+    </td>
+    <!-- Texto do projeto -->
+    <td width="75%" align="center" valign="middle">
+      <h1 style="display: inline-flex; align-items: center; gap: 10px;">ServeRest </h1>
+      <p>
+        Projeto de testes funcionais automatizados com <strong>Robot Framework</strong>.<br>
+        Validação da interface web da aplicação <strong>ServeRest</strong>, com foco em qualidade, colaboração e padronização.
+      </p>
+      <p>
+        Desenvolvido pela <strong>Squad Codetectives</strong> .
+      </p>
+    </td>
+  </tr>
+</table>
+
+---
 <h2>Automação de Testes Web com Robot Framework | ServeRest - Codetectives</h2>
 
 ---
@@ -84,6 +105,10 @@ cd codetectives
     </tr>
   </tbody>
 </table>
+
+---
+<h3> Créditos Visuais</h3>
+<p>As imagens foram geradas com auxílio de inteligência artificial (Sora, by OpenAI).</p>
 
 ---
 <h3>Licença</h3>
