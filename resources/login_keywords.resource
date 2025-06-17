@@ -8,7 +8,7 @@ Generate Random User Data
     ${email}=   Set Variable    user${rand}@teste.com
     Set Suite Variable    ${EMAIL_CAD}   ${email}
     Set Suite Variable    ${PASS_CAD}    123456
-    Set Suite Variable    ${NAME_CAD}    Robot Teste ${rand}
+    Set Suite Variable    ${NAME_CAD}    QA Teste ${rand}
 
 Register New User
     Go To Login Page
