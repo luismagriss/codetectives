@@ -3,16 +3,24 @@ Documentation    Keywords da página de Login
 Library    Browser
 Resource    ../base.resource
 
-
 *** Variables ***
-${login_btn}    css=.btn-primary
-
+# Page elements
+${login_btn}           css=.btn-primary
+${email_field}         css=input#email.form-control
+${password_field}      css=input#password.form-control
+${welcome_message}     css=.jumbotron h1
 
 *** Keywords ***
 Submit sign up form
     [Arguments]    ${user}
-    Fill Text    css=input#email.form-control       ${user}[email]
-    Fill Text    css=input#password.form-control    ${user}[password]
+    Fill Text    ${email_field}       ${user}[email]
+    Fill Text    ${password_field}    ${user}[password]
+
+Login with
+    [Arguments]    ${email}    ${password}
+    Fill Text    ${email_field}       ${email}
+    Fill Text    ${password_field}    ${password}
+    Click        ${login_btn}
 
 Alert should be
     [Arguments]    ${expected_text}
@@ -21,8 +29,12 @@ Alert should be
     Wait For Elements State    ${alert_element}    visible    5
     Get Text    ${alert_element}    equal    ${expected_text}
     
-Jumbotron should contain text
-    ${alert_element}      Set Variable    css=.jumbotron h1
+Message should contain
+    [Documentation]    Verifica que aparece a mensagem de boas-vindas após login bem sucedido.
+    Wait For Elements State    ${welcome_message}    visible    5
+    Get Text    ${welcome_message}    contains    Bem Vindo
 
-    Wait For Elements State    ${alert_element}    visible    5
-    Get Text    ${alert_element}    contains    Bem Vindo
+Validate login page is loaded
+    Wait For Elements State    ${email_field}    visible    5
+    Wait For Elements State    ${password_field}    visible    5
+    Wait For Elements State    ${login_btn}    visible    5
