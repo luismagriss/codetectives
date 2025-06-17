@@ -1,9 +1,11 @@
 *** Settings ***
-Library        Browser
+Documentation        Keywords de uso geral
 
+Library        Browser
 Resource       ../variables/variables.resource
 Resource       login_keywords.resource
 Resource       products_keywords.resource
+Resource       env.resource
 
 *** Keywords ***
 Start Session
@@ -17,3 +19,4 @@ Go To Login Page
 
 Fechar Navegador
     Close Browser    ALL
+
