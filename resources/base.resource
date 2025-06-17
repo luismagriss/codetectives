@@ -2,10 +2,8 @@
 Library        Browser
 
 Resource       ../variables/variables.resource
-Resource       carrinho_keywords.resource
 Resource       login_keywords.resource
 Resource       products_keywords.resource
-Resource       usuarios_keywords.resource
 
 *** Keywords ***
 Start Session
