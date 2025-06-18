@@ -1,9 +1,8 @@
 *** Settings ***
 Library  Browser
 Resource   env.robot
-Library     JSONLibrary
 Library     Collections
-
+Resource     ../dynamics/UserDynamic.robot
 *** Keywords ***
 Acessar página de cadastro
     Go To    ${BASE_URL}/cadastrarusuarios
@@ -17,12 +16,15 @@ Preencher formulário de cadastro
     Fill Text    id=password     ${user}[password]
 
 Enviar formulário
-    Wait For Elements State      data-testid=cadastrar     visible    10     
-    Click     data-testid=cadastrar
+    Wait For Elements State      css=button[type=submit]     visible    10     
+    Click     css=button[type=submit]
+    Sleep    1s
 
 Ver mensagem de erro
     [Arguments]    ${mensagem}
-    Wait For Elements State    css=.alert-error >> text=${mensagem}    visible    5
+    Wait For Elements State    css=.alert    visible    10
+    ${texto}    Get Text    css=.alert
+    Should Be Equal    ${texto}    ${mensagem}
 
 Ver mensagem de sucesso
-    Wait For Elements State    css=.notice-success    visible    5
+    Wait For Elements State    css=.alert-success    visible    10

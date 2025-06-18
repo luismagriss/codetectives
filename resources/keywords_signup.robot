@@ -15,4 +15,5 @@ Carregar usuário
     [Arguments]    ${tipo}
     ${json}    Load JSON From File    ./fixtures/users.json
     ${user}    Get From Dictionary    ${json}    ${tipo}
+    Set To Dictionary    ${user}    administrator=true
     RETURN    ${user}
