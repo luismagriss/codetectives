@@ -1,0 +1,249 @@
+{"level":30,"time":"2025-06-18T15:51:08.928Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Listening on 127.0.0.1:60466"}
+(node:17268) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-06-18T15:51:09.732Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-06-18T15:51:27.504Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-06-18T15:51:27.702Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-06-18T15:51:27.702Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-06-18T15:51:27.715Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-18T15:51:27.715Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-18T15:51:27.728Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Changed active context"}
+{"level":30,"time":"2025-06-18T15:51:32.874Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-18T15:51:32.875Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Changed active page"}
+{"level":30,"time":"2025-06-18T15:51:35.660Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-18T15:51:35.666Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:51:35.672Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:51:35.679Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T15:51:37.416Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T15:51:37.422Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:51:37.422Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:51:37.446Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:51:38.470Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:51:38.471Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:51:38.499Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:51:38.504Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:51:38.504Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T15:51:38.519Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:51:38.523Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:51:38.523Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T15:51:38.545Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:51:38.549Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:51:38.549Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:51:38.552Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:51:38.555Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T15:51:38.556Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:51:44.660Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T15:51:44.667Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:51:44.667Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with css=.notice-success in page."}
+{"level":30,"time":"2025-06-18T15:51:49.678Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('.notice-success') to be visible[22m
+
+    at waitForElementState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-06-18T15:51:49.691Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T15:51:49.691Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","Take screenshot with options: ":{"path":"C:\\Users\\rapha\\OneDrive\\Documentos\\codetectives\\logs\\browser\\screenshot\\fail-screenshot-6.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T15:51:59.731Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+page.screenshot: Timeout 10000ms exceeded.
+Call log:
+[2m  - taking page screenshot[22m
+[2m  - waiting for fonts to load...[22m
+[2m  - fonts loaded[22m
+
+    at takeScreenshot (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:10783:16)
+    at PlaywrightServer.takeScreenshot (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13135:34)
+    at Object.onReceiveHalfClose (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-06-18T15:51:59.846Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:51:59.875Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:51:59.881Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:51:59.884Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:51:59.925Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T15:52:00.576Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T15:52:00.581Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:00.581Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:52:00.597Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:01.602Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:01.603Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:52:01.615Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:01.621Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:01.621Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T15:52:01.631Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:01.635Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:01.635Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T15:52:01.644Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:01.648Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:01.648Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:52:01.651Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:01.681Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T15:52:01.682Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:52:09.769Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T15:52:09.776Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:09.776Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Email deve ser um email válido in page."}
+{"level":30,"time":"2025-06-18T15:52:14.782Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('.alert-error').locator('text=Email deve ser um email válido') to be visible[22m
+
+    at waitForElementState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-06-18T15:52:14.791Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T15:52:14.791Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","Take screenshot with options: ":{"path":"C:\\Users\\rapha\\OneDrive\\Documentos\\codetectives\\logs\\browser\\screenshot\\fail-screenshot-6.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T15:52:22.012Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T15:52:22.022Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:22.085Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:22.095Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:22.098Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:22.113Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T15:52:23.140Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T15:52:23.146Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:23.147Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:52:23.164Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:24.168Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:24.168Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:52:24.203Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:24.213Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:24.213Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T15:52:24.224Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:24.231Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:24.231Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T15:52:24.240Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:24.245Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:24.246Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:52:24.249Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:24.253Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T15:52:24.253Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:52:24.313Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T15:52:24.320Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:24.320Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Nome é obrigatório in page."}
+================= Original suppressed error =================
+{"level":30,"time":"2025-06-18T15:52:29.335Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Error of node method  waitForElementState"}
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('.alert-error').locator('text=Nome é obrigatório') to be visible[22m
+
+    at waitForElementState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-06-18T15:52:29.340Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T15:52:29.340Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","Take screenshot with options: ":{"path":"C:\\Users\\rapha\\OneDrive\\Documentos\\codetectives\\logs\\browser\\screenshot\\fail-screenshot-7.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T15:52:29.888Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T15:52:29.898Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:29.899Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:29.903Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:29.904Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:29.914Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T15:52:30.527Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T15:52:30.532Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:30.532Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:52:30.547Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:31.554Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:31.554Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:52:31.570Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:31.576Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:31.576Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T15:52:31.586Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:31.590Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:31.590Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T15:52:31.599Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:31.603Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:31.603Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:52:31.606Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:31.609Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T15:52:31.609Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:52:31.651Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T15:52:31.655Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:31.656Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Este email já está sendo usado in page."}
+{"level":30,"time":"2025-06-18T15:52:36.665Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('.alert-error').locator('text=Este email já está sendo usado') to be visible[22m
+
+    at waitForElementState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-06-18T15:52:36.675Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T15:52:36.675Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","Take screenshot with options: ":{"path":"C:\\Users\\rapha\\OneDrive\\Documentos\\codetectives\\logs\\browser\\screenshot\\fail-screenshot-8.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T15:52:36.876Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T15:52:36.885Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:36.887Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:36.890Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:36.893Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:36.897Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-06-18T15:52:37.515Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method goTo"}
+{"level":30,"time":"2025-06-18T15:52:37.518Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:37.518Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:52:37.534Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:38.544Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:38.544Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=nome in page."}
+{"level":30,"time":"2025-06-18T15:52:38.559Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:38.563Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:38.563Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-18T15:52:38.575Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:38.579Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:38.579Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-18T15:52:38.588Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-18T15:52:38.594Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:38.594Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:52:38.613Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:38.616Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-18T15:52:38.616Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with data-testid=cadastrar in page."}
+{"level":30,"time":"2025-06-18T15:52:38.652Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method click"}
+{"level":30,"time":"2025-06-18T15:52:38.657Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-18T15:52:38.657Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Strict mode is enabled, find Locator with css=.alert-error >> text=Senha deve ter no mínimo 6 caracteres in page."}
+{"level":30,"time":"2025-06-18T15:52:43.673Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('.alert-error').locator('text=Senha deve ter no mínimo 6 caracteres') to be visible[22m
+
+    at waitForElementState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13135:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-06-18T15:52:43.682Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T15:52:43.682Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","Take screenshot with options: ":{"path":"C:\\Users\\rapha\\OneDrive\\Documentos\\codetectives\\logs\\browser\\screenshot\\fail-screenshot-9.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-18T15:52:44.464Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-18T15:52:44.472Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:44.474Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:44.480Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-06-18T15:52:44.498Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Removed page=add5c18c-a879-4fde-9d41-2784bf010263 from context=8bd1e54e-5694-4514-88f3-276c3f57af96 page stack"}
+{"level":30,"time":"2025-06-18T15:52:46.205Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-18T15:52:46.210Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:46.210Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-18T15:52:46.785Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-18T15:52:46.786Z","pid":17268,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method closeAllBrowsers"}
