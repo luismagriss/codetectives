@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-06-18T16:28:14.101936" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="C:\Users\rapha\OneDrive\Documentos\codetectives\tests\signup.robot">
+<kw name="Abrir Página de Cadastro" owner="keywords_signup" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-18T16:29:16.858848" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\rapha\\OneDrive\\Documentos\\codetectives\\logs\\browser\\traces\\temp\\1ebb6f3a-3908-4811-8a2f-b174887ced29"}</msg>
+<msg time="2025-06-18T16:29:18.178144" level="INFO">Starting Browser process C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53337</msg>
+<msg time="2025-06-18T16:30:46.193987" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\rapha\\OneDrive\\Documentos\\codetectives\\logs\\browser\\traces\\temp\\1ebb6f3a-3908-4811-8a2f-b174887ced29"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-18T16:29:16.856852" elapsed="89.337135"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-18T16:31:30.999956" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev/cadastrarusuarios</msg>
+<msg time="2025-06-18T16:31:30.999956" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://front.serverest.dev/cadastrarusuarios</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-18T16:30:46.193987" elapsed="44.806968"/>
+</kw>
+<status status="PASS" start="2025-06-18T16:29:16.814227" elapsed="134.186728"/>
+</kw>
+<test id="s1-t1" name="Cadastro com dados válidos" line="10">
+<kw name="Gerar Usuario Valido" owner="UserDynamic">
+<kw name="Name" owner="FakerLibrary">
+<msg time="2025-06-18T16:31:31.015245" level="INFO">${name} = Richard Freeman</msg>
+<var>${name}</var>
+<doc>:example: 'John Doe'</doc>
+<status status="PASS" start="2025-06-18T16:31:31.013255" elapsed="0.001990"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<msg time="2025-06-18T16:31:31.016248" level="INFO">${email} = wendylewis@example.org</msg>
+<var>${email}</var>
+<status status="PASS" start="2025-06-18T16:31:31.015245" elapsed="0.001003"/>
+</kw>
+<kw name="Password" owner="FakerLibrary">
+<msg time="2025-06-18T16:31:31.017248" level="INFO">${password} = p9UR1Duh</msg>
+<var>${password}</var>
+<arg>length=8</arg>
+<arg>special_chars=False</arg>
+<doc>Generate a random password of the specified ``length``.</doc>
+<status status="PASS" start="2025-06-18T16:31:31.017248" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-06-18T16:31:31.018246" level="INFO">&amp;{user} = { name=Richard Freeman | email=wendylewis@example.org | password=p9UR1Duh | administrator=true }</msg>
+<var>&amp;{user}</var>
+<arg>name=${name}</arg>
+<arg>email=${email}</arg>
+<arg>password=${password}</arg>
+<arg>administrator=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-06-18T16:31:31.017248" elapsed="0.000998"/>
+</kw>
+<return>
+<value>${user}</value>
+<status status="PASS" start="2025-06-18T16:31:31.088524" elapsed="0.001000"/>
+</return>
+<msg time="2025-06-18T16:31:31.089524" level="INFO">${user} = {'name': 'Richard Freeman', 'email': 'wendylewis@example.org', 'password': 'p9UR1Duh', 'administrator': 'true'}</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-06-18T16:31:31.012253" elapsed="0.078283"/>
+</kw>
+<kw name="Acessar página de cadastro" owner="signup_page">
+<kw name="Go To" owner="Browser">
+<msg time="2025-06-18T16:31:32.275766" level="INFO">Successfully opened URL https://front.serverest.dev/cadastrarusuarios</msg>
+<arg>${BASE_URL}/cadastrarusuarios</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-06-18T16:31:31.091524" elapsed="1.185164"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:31:32.313409" level="INFO">Waited for Element with selector id=nome at state visible</msg>
+<arg>id=nome</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:31:32.276688" elapsed="0.037798"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-18T16:31:33.318282" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-18T16:31:32.314486" elapsed="1.003796"/>
+</kw>
+<status status="PASS" start="2025-06-18T16:31:31.090536" elapsed="2.227746"/>
+</kw>
+<kw name="Preencher formulário de cadastro" owner="signup_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:31:33.322364" level="INFO">Fills the text 'Richard Freeman' in the given field.</msg>
+<arg>id=nome</arg>
+<arg>${user}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:31:33.321367" elapsed="0.032803"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:31:33.355167" level="INFO">Fills the text 'wendylewis@example.org' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${user}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:31:33.354170" elapsed="0.013323"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:31:33.368493" level="INFO">Fills the text 'p9UR1Duh' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${user}[password]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:31:33.368493" elapsed="0.066120"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-06-18T16:31:33.319290" elapsed="0.115323"/>
+</kw>
+<kw name="Enviar formulário" owner="signup_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:31:33.455623" level="INFO">Waited for Element with selector css=button[type=submit] at state visible</msg>
+<arg>css=button[type=submit]</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:31:33.436717" elapsed="0.018906"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-18T16:31:33.456705" level="INFO">Clicks the element 'css=button[type=submit]'.</msg>
+<msg time="2025-06-18T16:31:53.520672" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+TimeoutError: page.screenshot: Timeout 10000ms exceeded.
+Call log:
+[2m  - taking page screenshot[22m
+[2m  - waiting for fonts to load...[22m
+[2m  - fonts loaded[22m
+</msg>
+<msg time="2025-06-18T16:31:53.520672" level="INFO">See also file:///C:/Users/rapha/OneDrive/Documentos/codetectives/logs/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-18T16:31:53.521673" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</msg>
+<arg>css=button[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="FAIL" start="2025-06-18T16:31:33.455623" elapsed="20.813553">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-18T16:31:54.269176" elapsed="0.001099"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:31:33.435703" elapsed="20.834572">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Ver mensagem de sucesso" owner="signup_page">
+<status status="NOT RUN" start="2025-06-18T16:31:54.271175" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:31:31.000955" elapsed="23.270220">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</test>
+<test id="s1-t2" name="Cadastro com email inválido" line="17">
+<kw name="Gerar Usuario Email Invalido" owner="UserDynamic">
+<kw name="Name" owner="FakerLibrary">
+<msg time="2025-06-18T16:31:54.287217" level="INFO">${name} = Mia Daniels</msg>
+<var>${name}</var>
+<doc>:example: 'John Doe'</doc>
+<status status="PASS" start="2025-06-18T16:31:54.286174" elapsed="0.001043"/>
+</kw>
+<kw name="Password" owner="FakerLibrary">
+<msg time="2025-06-18T16:31:54.288259" level="INFO">${password} = 9B9nVXiz</msg>
+<var>${password}</var>
+<arg>length=8</arg>
+<arg>special_chars=False</arg>
+<doc>Generate a random password of the specified ``length``.</doc>
+<status status="PASS" start="2025-06-18T16:31:54.287217" elapsed="0.001042"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-06-18T16:31:54.288259" level="INFO">&amp;{user} = { name=Mia Daniels | email=emailinvalido | password=9B9nVXiz | administrator=true }</msg>
+<var>&amp;{user}</var>
+<arg>name=${name}</arg>
+<arg>email=emailinvalido</arg>
+<arg>password=${password}</arg>
+<arg>administrator=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-06-18T16:31:54.288259" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${user}</value>
+<status status="PASS" start="2025-06-18T16:31:54.288259" elapsed="0.001004"/>
+</return>
+<msg time="2025-06-18T16:31:54.289263" level="INFO">${user} = {'name': 'Mia Daniels', 'email': 'emailinvalido', 'password': '9B9nVXiz', 'administrator': 'true'}</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-06-18T16:31:54.285176" elapsed="0.004087"/>
+</kw>
+<kw name="Acessar página de cadastro" owner="signup_page">
+<kw name="Go To" owner="Browser">
+<msg time="2025-06-18T16:31:55.298184" level="INFO">Successfully opened URL https://front.serverest.dev/cadastrarusuarios</msg>
+<arg>${BASE_URL}/cadastrarusuarios</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-06-18T16:31:54.289263" elapsed="1.008921"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:31:55.315618" level="INFO">Waited for Element with selector id=nome at state visible</msg>
+<arg>id=nome</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:31:55.298184" elapsed="0.017434"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-18T16:31:56.317126" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-18T16:31:55.315618" elapsed="1.001508"/>
+</kw>
+<status status="PASS" start="2025-06-18T16:31:54.289263" elapsed="2.028367"/>
+</kw>
+<kw name="Preencher formulário de cadastro" owner="signup_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:31:56.319632" level="INFO">Fills the text 'Mia Daniels' in the given field.</msg>
+<arg>id=nome</arg>
+<arg>${user}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:31:56.318633" elapsed="0.018922"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:31:56.339555" level="INFO">Fills the text 'emailinvalido' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${user}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:31:56.338552" elapsed="0.014746"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:31:56.354301" level="INFO">Fills the text '9B9nVXiz' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${user}[password]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:31:56.353298" elapsed="0.019080"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-06-18T16:31:56.317630" elapsed="0.054748"/>
+</kw>
+<kw name="Enviar formulário" owner="signup_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:31:56.381374" level="INFO">Waited for Element with selector css=button[type=submit] at state visible</msg>
+<arg>css=button[type=submit]</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:31:56.374383" elapsed="0.006991"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-18T16:31:56.382389" level="INFO">Clicks the element 'css=button[type=submit]'.</msg>
+<msg time="2025-06-18T16:32:16.410153" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+TimeoutError: page.screenshot: Timeout 10000ms exceeded.</msg>
+<msg time="2025-06-18T16:32:16.411133" level="INFO">See also file:///C:/Users/rapha/OneDrive/Documentos/codetectives/logs/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-18T16:32:16.411133" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</msg>
+<arg>css=button[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="FAIL" start="2025-06-18T16:31:56.381374" elapsed="20.033756">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-18T16:32:16.415130" elapsed="0.001023"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:31:56.373298" elapsed="20.042855">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Ver mensagem de erro" owner="signup_page">
+<arg>Email deve ser um email válido</arg>
+<status status="NOT RUN" start="2025-06-18T16:32:16.417148" elapsed="0.001017"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:31:54.279253" elapsed="22.139906">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</test>
+<test id="s1-t3" name="Cadastro com campos em branco" line="24">
+<kw name="Gerar Usuario Campos Vazios" owner="UserDynamic">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-06-18T16:32:16.446074" level="INFO">&amp;{user} = { name= | email= | password= | administrator=true }</msg>
+<var>&amp;{user}</var>
+<arg>name=</arg>
+<arg>email=</arg>
+<arg>password=</arg>
+<arg>administrator=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-06-18T16:32:16.445077" elapsed="0.000997"/>
+</kw>
+<return>
+<value>${user}</value>
+<status status="PASS" start="2025-06-18T16:32:16.447073" elapsed="0.000000"/>
+</return>
+<msg time="2025-06-18T16:32:16.448230" level="INFO">${user} = {'name': '', 'email': '', 'password': '', 'administrator': 'true'}</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-06-18T16:32:16.443075" elapsed="0.005155"/>
+</kw>
+<kw name="Acessar página de cadastro" owner="signup_page">
+<kw name="Go To" owner="Browser">
+<msg time="2025-06-18T16:32:17.091344" level="INFO">Successfully opened URL https://front.serverest.dev/cadastrarusuarios</msg>
+<arg>${BASE_URL}/cadastrarusuarios</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-06-18T16:32:16.450238" elapsed="0.642107"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:32:17.112896" level="INFO">Waited for Element with selector id=nome at state visible</msg>
+<arg>id=nome</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:32:17.092345" elapsed="0.020551"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-18T16:32:18.113148" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-18T16:32:17.112896" elapsed="1.000252"/>
+</kw>
+<status status="PASS" start="2025-06-18T16:32:16.449296" elapsed="1.663852"/>
+</kw>
+<kw name="Preencher formulário de cadastro" owner="signup_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:32:18.117313" level="INFO">Fills the text '' in the given field.</msg>
+<arg>id=nome</arg>
+<arg>${user}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:32:18.116314" elapsed="0.023610"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:32:18.142005" level="INFO">Fills the text '' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${user}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:32:18.141004" elapsed="0.016496"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:32:18.159498" level="INFO">Fills the text '' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${user}[password]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:32:18.157500" elapsed="0.017790"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-06-18T16:32:18.114190" elapsed="0.061100"/>
+</kw>
+<kw name="Enviar formulário" owner="signup_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:32:18.185996" level="INFO">Waited for Element with selector css=button[type=submit] at state visible</msg>
+<arg>css=button[type=submit]</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:32:18.177363" elapsed="0.008633"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-18T16:32:18.186991" level="INFO">Clicks the element 'css=button[type=submit]'.</msg>
+<msg time="2025-06-18T16:32:38.227137" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+TimeoutError: page.screenshot: Timeout 10000ms exceeded.</msg>
+<msg time="2025-06-18T16:32:38.227137" level="INFO">See also file:///C:/Users/rapha/OneDrive/Documentos/codetectives/logs/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-18T16:32:38.228134" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</msg>
+<arg>css=button[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="FAIL" start="2025-06-18T16:32:18.185996" elapsed="20.045141">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-18T16:32:38.232082" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:32:18.176284" elapsed="20.056849">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Ver mensagem de erro" owner="signup_page">
+<arg>Nome é obrigatório</arg>
+<status status="NOT RUN" start="2025-06-18T16:32:38.234062" elapsed="0.000999"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:32:16.433166" elapsed="21.801895">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</test>
+<test id="s1-t4" name="Cadastro com email já utilizado" line="31">
+<kw name="Carregar usuário" owner="keywords_signup">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2025-06-18T16:32:38.261131" level="INFO">${json} = {'valid_user': {'name': 'Ana Oliveira', 'email': 'ana.oliveira@exemplo.com', 'password': 'senhaSegura123'}, 'invalid_email': {'name': 'Ana Oliveira', 'email': 'ana.oliveiraexemplo.com', 'password': 's...</msg>
+<var>${json}</var>
+<arg>./fixtures/users.json</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2025-06-18T16:32:38.260063" elapsed="0.001068"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-06-18T16:32:38.261131" level="INFO">${user} = {'name': 'Bruno Souza', 'email': 'ana.oliveira@exemplo.com', 'password': 'senhaSegura123'}</msg>
+<var>${user}</var>
+<arg>${json}</arg>
+<arg>${tipo}</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-06-18T16:32:38.261131" elapsed="0.000000"/>
+</kw>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${user}</arg>
+<arg>administrator=true</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-06-18T16:32:38.262061" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${user}</value>
+<status status="PASS" start="2025-06-18T16:32:38.262061" elapsed="0.000000"/>
+</return>
+<msg time="2025-06-18T16:32:38.262061" level="INFO">${user} = {'name': 'Bruno Souza', 'email': 'ana.oliveira@exemplo.com', 'password': 'senhaSegura123', 'administrator': 'true'}</msg>
+<var>${user}</var>
+<arg>duplicate_email</arg>
+<status status="PASS" start="2025-06-18T16:32:38.259146" elapsed="0.002915"/>
+</kw>
+<kw name="Acessar página de cadastro" owner="signup_page">
+<kw name="Go To" owner="Browser">
+<msg time="2025-06-18T16:32:39.052710" level="INFO">Successfully opened URL https://front.serverest.dev/cadastrarusuarios</msg>
+<arg>${BASE_URL}/cadastrarusuarios</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-06-18T16:32:38.263148" elapsed="0.789562"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:32:39.080511" level="INFO">Waited for Element with selector id=nome at state visible</msg>
+<arg>id=nome</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:32:39.053714" elapsed="0.026797"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-18T16:32:40.081721" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-18T16:32:39.080511" elapsed="1.001714"/>
+</kw>
+<status status="PASS" start="2025-06-18T16:32:38.263148" elapsed="1.819077"/>
+</kw>
+<kw name="Preencher formulário de cadastro" owner="signup_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:32:40.088228" level="INFO">Fills the text 'Bruno Souza' in the given field.</msg>
+<arg>id=nome</arg>
+<arg>${user}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:32:40.085228" elapsed="0.028002"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:32:40.114231" level="INFO">Fills the text 'ana.oliveira@exemplo.com' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${user}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:32:40.113230" elapsed="0.015510"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:32:40.130740" level="INFO">Fills the text 'senhaSegura123' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${user}[password]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:32:40.129740" elapsed="0.010999"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-06-18T16:32:40.084228" elapsed="0.057512"/>
+</kw>
+<kw name="Enviar formulário" owner="signup_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:32:40.149740" level="INFO">Waited for Element with selector css=button[type=submit] at state visible</msg>
+<arg>css=button[type=submit]</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:32:40.142740" elapsed="0.007000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-18T16:32:40.150740" level="INFO">Clicks the element 'css=button[type=submit]'.</msg>
+<msg time="2025-06-18T16:33:00.198903" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+TimeoutError: page.screenshot: Timeout 10000ms exceeded.</msg>
+<msg time="2025-06-18T16:33:00.198903" level="INFO">See also file:///C:/Users/rapha/OneDrive/Documentos/codetectives/logs/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-18T16:33:00.199918" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</msg>
+<arg>css=button[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="FAIL" start="2025-06-18T16:32:40.149740" elapsed="20.053161">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-18T16:33:00.203826" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:32:40.141740" elapsed="20.062086">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Ver mensagem de erro" owner="signup_page">
+<arg>Este email já está sendo usado</arg>
+<status status="NOT RUN" start="2025-06-18T16:33:00.205873" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:32:38.250069" elapsed="21.956834">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</test>
+<test id="s1-t5" name="Cadastro com senha inferior a 5 caracteres" line="38">
+<kw name="Gerar Usuario Senha Curta" owner="UserDynamic">
+<kw name="Name" owner="FakerLibrary">
+<msg time="2025-06-18T16:33:00.230897" level="INFO">${name} = James Morris</msg>
+<var>${name}</var>
+<doc>:example: 'John Doe'</doc>
+<status status="PASS" start="2025-06-18T16:33:00.229900" elapsed="0.000997"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<msg time="2025-06-18T16:33:00.231902" level="INFO">${email} = murraymitchell@example.net</msg>
+<var>${email}</var>
+<status status="PASS" start="2025-06-18T16:33:00.230897" elapsed="0.001005"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-06-18T16:33:00.231902" level="INFO">&amp;{user} = { name=James Morris | email=murraymitchell@example.net | password=123 | administrator=true }</msg>
+<var>&amp;{user}</var>
+<arg>name=${name}</arg>
+<arg>email=${email}</arg>
+<arg>password=123</arg>
+<arg>administrator=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-06-18T16:33:00.231902" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${user}</value>
+<status status="PASS" start="2025-06-18T16:33:00.231902" elapsed="0.000997"/>
+</return>
+<msg time="2025-06-18T16:33:00.232899" level="INFO">${user} = {'name': 'James Morris', 'email': 'murraymitchell@example.net', 'password': '123', 'administrator': 'true'}</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-06-18T16:33:00.228899" elapsed="0.004000"/>
+</kw>
+<kw name="Acessar página de cadastro" owner="signup_page">
+<kw name="Go To" owner="Browser">
+<msg time="2025-06-18T16:33:00.841677" level="INFO">Successfully opened URL https://front.serverest.dev/cadastrarusuarios</msg>
+<arg>${BASE_URL}/cadastrarusuarios</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-06-18T16:33:00.233826" elapsed="0.607851"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:33:00.857593" level="INFO">Waited for Element with selector id=nome at state visible</msg>
+<arg>id=nome</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:33:00.842678" elapsed="0.015918"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-18T16:33:01.858984" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-18T16:33:00.858596" elapsed="1.000388"/>
+</kw>
+<status status="PASS" start="2025-06-18T16:33:00.232899" elapsed="1.626085"/>
+</kw>
+<kw name="Preencher formulário de cadastro" owner="signup_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:33:01.863067" level="INFO">Fills the text 'James Morris' in the given field.</msg>
+<arg>id=nome</arg>
+<arg>${user}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:33:01.860995" elapsed="0.025330"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:33:01.887324" level="INFO">Fills the text 'murraymitchell@example.net' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${user}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:33:01.887324" elapsed="0.013916"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-18T16:33:01.902239" level="INFO">Fills the text '123' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${user}[password]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-18T16:33:01.901240" elapsed="0.012996"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-06-18T16:33:01.859993" elapsed="0.054243"/>
+</kw>
+<kw name="Enviar formulário" owner="signup_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-18T16:33:01.921287" level="INFO">Waited for Element with selector css=button[type=submit] at state visible</msg>
+<arg>css=button[type=submit]</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-18T16:33:01.915237" elapsed="0.006050"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-18T16:33:01.922290" level="INFO">Clicks the element 'css=button[type=submit]'.</msg>
+<msg time="2025-06-18T16:33:21.952529" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+TimeoutError: page.screenshot: Timeout 10000ms exceeded.</msg>
+<msg time="2025-06-18T16:33:21.953529" level="INFO">See also file:///C:/Users/rapha/OneDrive/Documentos/codetectives/logs/playwright-log.txt for additional details.</msg>
+<msg time="2025-06-18T16:33:21.953529" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</msg>
+<arg>css=button[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="FAIL" start="2025-06-18T16:33:01.921287" elapsed="20.035241">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-18T16:33:21.956528" elapsed="0.001000"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:33:01.914236" elapsed="20.043292">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</kw>
+<kw name="Ver mensagem de erro" owner="signup_page">
+<arg>Senha deve ter no mínimo 6 caracteres</arg>
+<status status="NOT RUN" start="2025-06-18T16:33:21.958528" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-18T16:33:00.221911" elapsed="21.736617">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('button[type=submit]')
+    - locator resolved to &lt;button type="submit" data-testid="cadastrar" class="btn btn-primary btn btn-primary"&gt;Cadastrar&lt;/button&gt;
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+</status>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-06-18T16:33:27.279615" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-18T16:33:21.967613" elapsed="5.312002"/>
+</kw>
+<doc>Testes de cadastro de usuários</doc>
+<status status="FAIL" start="2025-06-18T16:28:14.135323" elapsed="313.145295"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Signup" id="s1" pass="0" fail="5" skip="0">Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
