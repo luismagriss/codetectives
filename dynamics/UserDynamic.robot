@@ -1,36 +1,27 @@
 *** Settings ***
 
 Library    FakerLibrary
+Library    Browser
 
 *** Keywords ***
 Gerar Usuario Valido
     ${name}=    FakerLibrary.Name   
     ${email}=   FakerLibrary.Email
     ${password}=    FakerLibrary.Password    length=8    special_chars=False
-    &{user}=    Create Dictionary    name=${name}    email=${email}    password=${password}    administrator=true
-    RETURN    ${user}
+    Set Global Variable    ${name}
+    Set Global Variable    ${email}
+    Set Global Variable    ${password}
+    #&{user}=    Create Dictionary    name=${name}    email=${email}    password=${password}    administrator=true
+    #RETURN    ${user}
 
-Gerar Usuario Email Invalido
-    ${name}=    FakerLibrary.Name    
-    ${password}=    FakerLibrary.Password    length=8    special_chars=False
-    &{user}=    Create Dictionary    name=${name}    email=emailinvalido    password=${password}   administrator=true
-    RETURN    ${user}
-
-Gerar Usuario Campos Vazios
-    &{user}=    Create Dictionary    name=    email=    password=    administrator=true
-    RETURN    ${user}
-
-Gerar Usuario Email Duplicado
-    [Arguments]    ${email_duplicado}
-    ${name}=    FakerLibrary.Name     
-    ${password}=    FakerLibrary.Password    length=8    special_chars=False
-    &{user}=    Create Dictionary    name=${name}    email=${email_duplicado}    password=${password}   administrator=true
-    RETURN    ${user}
-
-Gerar Usuario Senha Curta
-    ${name}=    FakerLibrary.Name    
+Preencher Campos Com Senha Curta
+    [Arguments]    ${senha}
+    ${nome}=    FakerLibrary.Name
     ${email}=   FakerLibrary.Email
-    &{user}=    Create Dictionary    name=${name}    email=${email}    password=123    administrator=true
-    RETURN    ${user}
 
-
+    Fill Text    data-testid=nome       ${nome}
+    Fill Text    data-testid=email      ${email}
+    Fill Text    data-testid=password   ${senha}
+    Wait For Elements State    data-testid=checkbox    visible    timeout=5s
+    Click        data-testid=checkbox
+    Click        data-testid=cadastrar    

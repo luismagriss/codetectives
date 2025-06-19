@@ -20,3 +20,5 @@ Go To Login Page
 Fechar Navegador
     Close Browser    ALL
 
+Go to User Page
+    Go To    ${BASE_URL}/cadastrarusuarios

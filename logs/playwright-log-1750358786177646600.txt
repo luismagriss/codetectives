@@ -1,0 +1,37 @@
+{"level":30,"time":"2025-06-19T18:47:05.819Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Listening on 127.0.0.1:53515"}
+(node:19652) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-06-19T18:47:06.367Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-06-19T18:47:16.836Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-06-19T18:47:16.949Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-06-19T18:47:16.949Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-06-19T18:47:17.108Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-19T18:47:17.108Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-19T18:47:17.118Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Changed active context"}
+{"level":30,"time":"2025-06-19T18:47:30.661Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-19T18:47:30.662Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Changed active page"}
+{"level":30,"time":"2025-06-19T18:47:37.088Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-19T18:47:37.093Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-19T18:47:37.098Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-19T18:47:37.106Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-19T18:47:37.108Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-19T18:47:37.115Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-06-19T18:47:37.131Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Removed page=52778cf9-6c8f-4485-bf04-a1879044192d from context=f002aa8b-56d1-45fa-8201-55871c53a1e7 page stack"}
+{"level":30,"time":"2025-06-19T18:47:49.360Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\rapha\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-19T18:47:49.366Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-19T18:47:49.366Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-19T18:47:50.468Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-19T18:47:50.468Z","pid":19652,"hostname":"LAPTOP-ENNML2AJ","msg":"End of node method closeAllBrowsers"}
