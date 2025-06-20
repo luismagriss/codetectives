@@ -2,4 +2,4 @@
 Documentation    Variáveis do ambiente
 
 *** Variables ***
-${BASE_URL}    https://compassuolfront.serverest.dev/
+${BASE_URL}    https://compassuolfront.serverest.dev

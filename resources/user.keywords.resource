@@ -2,7 +2,7 @@
 
 Library    Browser
 Resource   ../dynamics/UserDynamic.robot
-Resource   base.resource 
+Resource   base.resource
 
 *** Keywords ***
 
@@ -10,8 +10,8 @@ Cadastrar Usuario Válido
     Fill Text    data-testid=nome      ${name}
     Fill Text    data-testid=email     ${email}
     Fill Text    data-testid=password  ${password}
-    Click       data-testid=checkbox
-    Click       data-testid=cadastrar
+    Click        data-testid=checkbox
+    Click        data-testid=cadastrar
     Wait For Elements State    text=Cadastro realizado com sucesso    visible    timeout=5s
     Sleep    5
 

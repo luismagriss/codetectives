@@ -54,8 +54,3 @@ Product Should Be Registered
 
     Wait For Elements State    xpath=//td[text()="${product_name}"]   visible    5
 
-Alert should be
-    [Arguments]        ${expected_text}
-
-    Wait For Elements State        xpath=//span[text()="${expected_text}"]
-    ...                            visible        5

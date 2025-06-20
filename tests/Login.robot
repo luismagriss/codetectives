@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation        Cenários de testes na página de Login
 Library              Browser
-Resource             ../resources/pages/LoginPage.resource
+Resource             ../resources/base.resource
 Resource             ../resources/data/login_data.resource
 Test Setup           Start Session
 Test Tags            login    authentication
@@ -27,12 +27,15 @@ Login com dados válidos
     [Documentation]    Verifica se o login é bem-sucedido com credenciais válidas
     [Tags]            positive    smoke
     
+    Cadastrar usuário padrão
+    
     # Given - Usuário com credenciais válidas
     ${user}    Create Dictionary
     ...        email=${VALID_EMAIL}
     ...        password=${VALID_PASSWORD}
     
     # When - Faz login com credenciais válidas
+    Go To Login Page
     Submit sign up form    ${user}
     Click                  ${login_btn}
     

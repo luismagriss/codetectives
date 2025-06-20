@@ -2,10 +2,12 @@
 Documentation    Keywords da página de Login
 Library    Browser
 Resource    ../base.resource
+Resource    ../../dynamics/UserDynamic.robot
 
 *** Variables ***
 # Page elements
 ${login_btn}           css=.btn-primary
+${name_field}          css=input#nome.form-control
 ${email_field}         css=input#email.form-control
 ${password_field}      css=input#password.form-control
 ${welcome_message}     css=.jumbotron h1
@@ -21,17 +23,10 @@ Login with
     Fill Text    ${email_field}       ${email}
     Fill Text    ${password_field}    ${password}
     Click        ${login_btn}
-
-Alert should be
-    [Arguments]    ${expected_text}
-    ${alert_element}      Set Variable    xpath=//div[contains(@class, 'alert')]//span[normalize-space(.)='${expected_text}']
-
-    Wait For Elements State    ${alert_element}    visible    5
-    Get Text    ${alert_element}    equal    ${expected_text}
     
 Message should contain
     [Documentation]    Verifica que aparece a mensagem de boas-vindas após login bem sucedido.
-    Wait For Elements State    ${welcome_message}    visible    5
+    Wait For Elements State    ${welcome_message}    visible    10
     Get Text    ${welcome_message}    contains    Bem Vindo
 
 Validate login page is loaded
